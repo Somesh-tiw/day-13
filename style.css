@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_container{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    
+}
+.right{
+
+    width: 30%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left{
+    
+    width: 70%;
+    height: 100vh;
+    background-color: black;
+    background-image: url("image/login-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+
+}
+.right img{
+    width: 50%;
+}
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 40px;
+}
+.lable{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #ffffff;
+    padding-block: 10px;
+    
+}
+
+form input{
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid  gray;
+    padding-block: 20px;
+    color: #ffffff;
+}
+input:focus{
+    display: none;
+}
+form button{
+    width: 70%;
+    height: 40px;
+    background-color: rgb(10, 93, 131);
+    color: white;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+}
+form button:hover{
+    background-color: rgb(16, 98, 137);
+}
+form a{
+    padding-block: 15px;
+    color:  rgb(10, 93, 131);
+    text-decoration: none;
+}
+ 
+form hr{
+    width: 70%;
+    color: gray;
+
+}
+.left h1{
+    color: #ffffff;
+    font-size: 40px;
+
+}
+.left button{
+    color: #ffffff;
+    width: 25%;
+    margin-top: 50px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+form p{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 15px;
+}
+span{
+    margin-top: 20px;
+    color: #ffffff;
+}
+span a{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width:755px) {
+  .right{
+    width: 100%;
+  }
+   .left{
+    display: none;
+   }
+   form p{
+    text-align: center;
+   }
+   .right img{
+    width: 50%;
+    margin-top: 250px;
+}
+        
+    
+}
