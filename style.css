@@ -3,10 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .main_container{
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    /* background-color: black; */
+  
     display: flex;
     
 }
@@ -14,11 +16,14 @@
 
     width: 30%;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+body{
+    background-color: black;
 }
 .left{
     
@@ -40,6 +45,7 @@
 }
 form{
     width: 100%;
+    background-color: black;
     height: auto;
     display: flex;
 align-items: center;
@@ -66,7 +72,7 @@ form input{
     color: #ffffff;
 }
 input:focus{
-    display: none;
+    visibility: none;
 }
 form button{
     width: 70%;
@@ -122,6 +128,11 @@ span a{
 
 
 @media screen and (max-width:755px) {
+    .main_container
+    {
+        height: 100vh;
+        background-color: black ;
+    }
   .right{
     width: 100%;
   }
